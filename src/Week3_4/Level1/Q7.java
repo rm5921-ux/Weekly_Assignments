@@ -1,0 +1,20 @@
+package Week3_4.Level1;
+
+import java.util.Scanner;
+
+public class Q7 {
+    public static void main(String[] args)
+    {
+        try(Scanner sc=new Scanner(System.in))
+        {
+            System.out.print("Enter Month Value (Jan=1,Feb=2...) : ");
+            int month=sc.nextInt();
+            System.out.print("Enter Date : ");
+            int date=sc.nextInt();
+            if((month==3 && date>=20) || (month==4) || (month==5) || (month==6 && date<=20))
+                System.out.println("Its a Spring Season !");
+            else
+                System.out.println("Not a Spring Season !");
+        }
+    }
+}
